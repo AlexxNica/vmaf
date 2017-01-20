@@ -34,6 +34,8 @@ if [ "$QUALITY_TYPE" != "" ]; then
 	VMAF_CMD="$VMAF_CMD --quality-type $QUALITY_TYPE"
 fi
 
+echo $VMAF_CMD
+
 rm -f $FIFO_REF
 rm -f $FIFO_DIS
 
